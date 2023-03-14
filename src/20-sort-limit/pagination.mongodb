@@ -1,0 +1,5 @@
+use("test")
+
+// dbd.categories.find().skip(0).limit(2)
+// dbd.categories.find().skip(2).limit(2)
+db.categories.find().skip(4).limit(2)

@@ -1,0 +1,12 @@
+use("test")
+//$inc
+db.products.updateOne(
+    //query
+    {_id:4},
+    // change => $inc
+    {
+        $inc:{
+            price:3000,
+        }
+    }
+)

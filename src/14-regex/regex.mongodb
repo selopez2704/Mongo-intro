@@ -1,0 +1,15 @@
+use("test")
+// db.inventory.find(
+//     {
+//         "item.description":{
+//             $regex:/line$/i
+//         }
+//     }
+// )
+db.inventory.find(
+    {
+        "item.description":{
+            $regex:/^s/im
+        }
+    }
+)

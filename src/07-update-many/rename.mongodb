@@ -1,0 +1,13 @@
+use("sample_training")
+//rename operator modifies the name of some given attribute
+
+db.zips.updateMany(
+    //query
+    {city:"CLEVELAND"},
+    //update - operator
+    {
+        $rename:{
+            myAttr:"myNewAttr"
+        }
+    }
+)

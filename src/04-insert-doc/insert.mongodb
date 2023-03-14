@@ -1,0 +1,9 @@
+use("test")
+db.products.insertOne({
+    name:"product1",
+    price:1000
+})
+db.products.insertOne({
+    name:"product2",
+    price:100
+})

@@ -1,0 +1,14 @@
+use("test")
+
+//pop remove the firts (-1) or last element (1)
+db.iot.updateOne(
+    {sensor:"A001",
+    date:"2022-01-03"
+    },
+
+    {
+        $pop:{
+            readings: 1
+        }
+    }
+)

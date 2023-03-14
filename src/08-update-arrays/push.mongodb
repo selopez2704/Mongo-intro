@@ -1,0 +1,11 @@
+use("test")
+//push operator only works for arrays
+
+db.inventory.updateOne(
+    {_id:4},
+    {   
+        $push:{
+            tags:"headphone"
+        }
+    }
+)

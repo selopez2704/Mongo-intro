@@ -1,0 +1,13 @@
+use("sample_training")
+//unset operator drop a given attribute
+
+db.zips.updateMany(
+    //query
+    {city:"CLEVELAND"},
+    //update - operator
+    {
+        $unset:{
+            myNewAttr:""
+        }
+    }
+)

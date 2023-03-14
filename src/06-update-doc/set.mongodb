@@ -1,0 +1,15 @@
+use("test")
+//$set
+db.products.updateOne(
+    //query
+    {_id:4},
+    // change => $set
+    {
+        $set:{
+            name:"change name",
+            tags:["a","b","c"]
+        }
+    }
+)
+
+

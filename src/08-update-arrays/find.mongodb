@@ -1,0 +1,3 @@
+use("test")
+
+db.inventory.find()

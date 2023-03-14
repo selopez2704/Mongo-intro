@@ -1,0 +1,13 @@
+use("test")
+
+// Using equal
+
+// db.inventory.find({qty:20})
+// db.inventory.find({qty:{$eq:20}})
+// db.inventory.find({"item.code":"123"})
+// db.inventory.find({"item.code":{$eq:"123"}})
+
+
+// Using No-Equal
+db.inventory.find({qty:{$ne:20}})
+
